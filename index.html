@@ -67,6 +67,167 @@
 
         <!-- The <b> tag specifies bold text without any extra importance. -->
             <p>This is normal text - <b>and this is bold text</b>.</p>
+
+
+            <!--preformatted text- (inline tag)-->
+       <pre>
+        Text in a pre element
+        is displayed in a fixed-width
+        font, and it preserves
+         both      spaces and
+        line breaks
+        </pre><hr>
+    
+        <!--progress-to set the range(inline-tag) -->
+        <label for="file">html:</label>
+        <progress id="file" value="50" max="100"> 90% </progress>
+        <label for="file">css:</label>
+        <progress id="file" value="50" max="100"> 80% </progress>
+         <label for="file">javascript:</label>
+        <progress id="file" value="50" max="100"> 60% </progress><hr>
+    
+        <!--quotation tag(inline-tag)to create the quotation to particular content-->
+        <h1>My name is <q>Deepan</q></h1><hr>
+    
+        <!--1,2,3ruby,rt,rp tags-->
+        <ruby>
+            漢 <rp>(</rp>
+            <rt>ㄏㄢˋ</rt>
+            <rp>)</rp>
+        </ruby><hr>
+    
+        <!--its also same as delete tag to strike the particular content(inline tag)-->
+        <h1>website<s>develeper</s></h1><hr>
+    
+        <!--sample output from a computer program(to message through the computer)-->
+        <p><samp>File not support</samp> to select another option</p><hr>
+    
+        <!--Common uses for JavaScript are image manipulation, form validation, and dynamic changes of content.-->
+        <!---->
+        <script src="script.js"></script>
+    
+        <!-- section tag defines a section in a document(block-tag). -->
+        <section>
+            <h1>heading</h1>
+            <p>To describe the heading</p>
+        </section><hr>
+    
+        <!--to dropdown the list to the option-->
+        <select>
+            <option>male</option>
+            <option>female</option>
+    
+        </select><hr>
+    
+        <!-- small tag defines smaller text(inline tag) (like copyright and other side-comments)-->
+        <small>Welcome</small><hr>
+    
+        <!--span (inline tag) used to style the particular letter or content-->
+        <h1><span style="color:rgb(66, 244, 191) ;">D</span><span style="color: rgb(234,67,53);">E</span><span
+                style="color:rgb(103, 251, 5) ;">E</span><span style="color:rgb(66,133,244) ;">P</span><span
+                style="color:rgb(52,168,83) ;">A</span><span style="color:rgb(234,67,53) ;">N</span></h1><hr>
+    
+    
+        <!--srtike tag not support in html5-->
+        <strike></strike>
+    
+        <!--strong tag (inline tag) its same b tag, the letter or content will be bold-->
+        <p>HEllo <strong>Everyone</strong></p><hr>
+    
+        <!--style tag . to style the all html content-->
+        <h1><span style="color:rgb(66,133,244) ;">K</span><span style="color: rgb(234, 53, 189);">G</span><span
+                style="color:rgb(5, 222, 251) ;">F</span><span style="color:rgba(148, 8, 136, 0.767) ;">D</span><span
+                style="color:rgb(52,168,83) ;">O</span><span style="color:rgb(234,67,53) ;">N</span></h1><hr>
+    
+        <!--svg tag- used for graphics ..SVG has several methods for drawing paths, boxes, circles, text, and graphic images. -->
+        <svg width="100" height="100">
+            <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="blue" />
+        </svg><hr>
+    
+        <!--summary ..(semantic tag) tag defines a visible heading for the <details> element-->
+        <details>
+            <summary>lorem</summary>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia quae blanditiis sunt animi quo molestiae
+                sit perferendis doloribus tempore ut quisquam autem suscipit, dolorem ab provident dolorum expedita
+                laboriosam voluptate?</p>
+        </details><hr>
+    
+        <!--Subscript tag -used to down the area of text or the letter will be small(inline-tag)-->
+        <span>H</span><sub>2</sub><span>O</span><br><hr>
+    
+        <!--superscript tag-used to under the area of text (inline-tag)-->
+        <span>(A+B)</span><sup>2</sup><span>=A</span><sup>2</sup><span>+2AB</span><span>+B</span><sup>2</sup><hr>
+    
+        <!--1table is define as create table for html (block tag)-->
+        <!--2.tr is define as table row-->
+        <!--3.th is define as table head-->
+        <!--4. td is define as table data-->
+        <!--5.The tbody tag is used to group of the content in html table.-->
+        <!--6.tfoot tag is used to group of footer content in html table-->
+        <!--6.thead tag is used to group of header content in html table-->
+        <table border="4px">
+            <thead>
+            <tr>
+                <th>Month</th>
+                <th>Savings</th>
+            </tr>
+        </thead>
+            <tbody>
+                <tr>
+                    <td>January</td>
+                    <td>45000</td>
+                </tr>
+                <tr>
+                    <td>January</td>
+                    <td>40000</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>January</td>
+                    <td>300000</td>
+                </tr>
+            </tfoot>
+        </table><hr>
+    
+    
+    <!--textarea tag to create the box for user review (block tag)-->
+    <h1>your suggestion</h1>
+    <textarea></textarea><hr>
+    
+    <!--The template tag is used as a container to hold some HTML content hidden from the user when the page loads.-->
+    <template>
+        <h2>Flower</h2>
+        <img src="/image/1.jpg" width="214" height="204">
+      </template>
+      <button onclick="showContent()">Show hidden content</button>
+      <script>
+        function showContent() {
+          var temp = document.getElementsByTagName("template")[0];
+          var clon = temp.content.cloneNode(true);
+          document.body.appendChild(clon);
+        }
+        </script>
+    <br><hr>
+    <!--time tag(inline tag)used to mention the time-->
+    <span>everyday i will spend</span> <time>1:00</time>to <time>2:00</time> <span>in social medias.</span><hr>
+    
+    <!--title tag. the tag content display in webpage top-the tag inside of the head tag-->
+    <head>
+    <title>Html tag practice</title>
+    </head><hr>
+
+    <!--ul tag-unorder list item-->
+    <ul>
+        <li>deepan</li>
+        <li>mathan</li>
+    </ul><hr>
+    
+    <!--under line  tag (inline tag)-->
+    <h1>this is <u>underline</u> tag</h1><hr>
+    
+    <!--var tag (inline tag) italic style os tag// variable in programming or in a mathematical expression.-->
+    <h1>1/2 <var>b * h</var></h1><hr>
             
 </body>
 </html>
